@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <script src="function.js"></script>
+    <title>Datos de usuario</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "page-wrapper">
+            <nav class="menu">
+                <ul>
+                  <!-- <li><a href="#"></a></li> -->
+                  <li style="float: right;"><a href="login.html" id="logout">Log out</a></li>
+                </ul>
+              </nav>
+              <div>
+                  <h1 id="userwel">Bienvenido usuario</h1>
+              </div>
+              <H3>Tu saldo es:</H3>
+              <h4 id="saldo"> </h4>
+               <input class = "btn" onclick="consultarSaldo()" type="button" value="Consultar tu saldo"> 
+               <H3>Ingresa el monto a guardar:</H3>
+               <h4 id="ingreso"> </h4>
+               <input type="text" name="montoI" placeholder="Monto a ingresar" class="input-item" id="ingresar">
+                <input class = "btn" onclick="ingresarMonto()" type="button" value="Ingresar"> 
+                <H3>Ingresa el monto a retirar:</H3>
+                <h4 id="ingreso"> </h4>
+                <input type="text" name="montoR" placeholder="Monto a retirar" class="input-item" id="retirar">
+                 <input class = "btn" onclick="retirarMonto()" type="button" value="Retirar"> 
+        </div>
+    </div>  
+</body>
+</html>
